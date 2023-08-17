@@ -7,19 +7,39 @@
     font-style: normal;
 }
 
+/*
+#8DFFA6
+#216630
+#35A64D
+#000000
+#ffffff
+.. acessa pasta anterior
+*/
+
+:root {
+    --verde-claro: #8DFFA6;
+    --verde-escuro: #216630;
+    --verde-principal: #35A64D;
+    --preto: #000000;
+    --branco: #f7f7f7;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-titulo: 'idroid', cursive;
+}
+
 
 body {
     font-family:  Arial, Helvetica, sans-serif;
     margin: 0px;
-    background-color: #8DFFA6;
+    background-color: var(--verde-claro);
 }
 
 main {
 
-    background-color: white;
+    background-color: var(--branco);
     width: 800px;
     margin: auto;
-    box-shadow: 1px 3px 7px 4px rgba(0, 0, 0, 0.267);
+    box-shadow: 1px 3px 7px 4px #00000044;
 }
 
     img {
@@ -40,9 +60,9 @@ main {
 
 
     #titulo_principal {
-        font-family: 'idroid';
+        font-family: var(--font-titulo);
         font-size: 2em;
-        color: #216630;
+        color: var(--verde-principal);
         font-weight: normal;
         padding: 1px;
         text-shadow: none;
@@ -57,28 +77,29 @@ main {
 
     #video_box {
 
-        background-color: #35A64D;
+        background-color: var(--verde-principal);
 
     }
 
     h2 {
         padding-left: 16px;
-        color: #216630;
-        background-image: linear-gradient(to right, #8dffa69f, #8dffa600 );
+        color: var(--verde-escuro);
+        background-image: linear-gradient(to right, var(--verde-claro), #8dffa600 );
         font-family: 'idroid';
         font-weight: normal;
 
     }
 
 header {
-    background-image: linear-gradient(to top, #216630, #35A64D);
-    color: white;
+    background-image: linear-gradient(to top, var(--verde-escuro), var(--verde-principal));
+    color: var(--branco);
     text-align: center;
     margin: 0px;
     padding: 16px;
 }
 
 nav {
+    background-color: var(--verde-escuro);
     padding: 8px;
     text-align: left;
     align-content: center;
@@ -92,7 +113,7 @@ nav {
 nav > a {
 
     text-decoration: none;
-    color: white;
+    color: var(--branco);
     font-weight: bold;
     padding-left: 16px;
     padding-right: 16px;
@@ -108,8 +129,8 @@ nav > a:hover {
 
 footer {
     padding: 6px;
-    color:white;
+    color:var(--branco);
     text-align: center;
-    background-color: #216630;
+    background-color: var(--verde-escuro);
     margin: auto;
 }
