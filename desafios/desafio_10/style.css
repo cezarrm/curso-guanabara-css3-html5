@@ -41,41 +41,40 @@ body {
     background-color: var(--verde-claro);
 }
 
-main {
-
+main {  
+    min-width: 300px;
+    max-width: 1000px;
     background-color: var(--branco);
-    width: 800px;
+    padding: 20px;
     margin: auto;
     box-shadow: 1px 3px 7px 4px #00000044;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-    img {
-        margin: auto;
-        max-width: 100%;
-    }
+        main img {
+        width: 100%;    
 
-    article {
-        
-        padding: 32px;
-    }
+        }
 
-    h1 {
+        main img.pequena {
 
-        text-shadow: 3px 3px 3px #00000049;
+            width: 50%;
+            margin: auto;
+            display: block;
+        }
+  
+
+  
+
+    #titulo_principal {
+        font-family: var(--font-titulo);
+        color: #216630;
        
     }
 
 
-    #titulo_principal {
-        font-family: var(--font-titulo);
-        font-size: 2em;
-        color: var(--verde-principal);
-        font-weight: normal;
-        padding: 1px;
-        text-shadow: none;
-        margin-bottom: 8px;
-        margin-top: 8px;
-    }
+
 
     p {
         text-indent: 20px;
@@ -98,16 +97,40 @@ main {
     }
 
 header {
+    min-height: 150px;
     background-image: linear-gradient(to top, var(--verde-escuro), var(--verde-principal));
     color: var(--branco);
     text-align: center;
-    margin: 0px;
-    padding: 16px;
+    padding-top: 40px;
+    
 }
+
+
+header > p {
+  color: white;
+  font-size: 1em;
+  font-family: var(--fonte-padrao);
+  max-width: 600px;
+  padding-right: 10px;
+  padding-left: 10px;;
+  padding-bottom: 16px;
+  margin: auto;
+  text-shadow: 3px 3px 3px #00000049;
+}
+
+header > h1 {
+    color: white;
+    font-size: 2.5em;
+    font-family: var(--font-titulo);
+    margin-bottom: 20px;
+    text-shadow: 0px 7px 7px #00000049;
+  }
+  
 
 nav {
     background-color: var(--verde-escuro);
-    padding: 8px;
+    padding: 10px;
+    box-shadow: 0px 7px 7px #00000049;
     text-align: left;
     align-content: center;
 }
@@ -118,19 +141,22 @@ nav {
  }
 
 nav > a {
-
+    color: white;
     text-decoration: none;
     color: var(--branco);
     font-weight: bold;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    
 
 }
 
+
 nav > a:hover {
-
-    text-decoration: underline;
-
+    transition-duration: 0.5s;
+    background-color: var(--verde-claro);
+    color: var(--verde-escuro);
+    
 
 }
 
